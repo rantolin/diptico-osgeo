@@ -8,6 +8,9 @@
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{fancybox}
 \usepackage{wallpaper}
+\usepackage{caption}
+\usepackage{subcaption}
+
 
 % Estilo de página %% NO CAMBIAR!!
 \pagestyle{empty} % no page number
@@ -76,76 +79,26 @@
 % Tipo de fuente Sans-Serif para todo el documento
 \sffamily
 
-% Fondo con el logo de OSGeo-ES
-\ThisURCornerWallPaper{0.15}{OSGeo_200_85_pixel.png}
-
-\begin{center}
-\color{VerdeOscuro2!50!black}\huge OSGeo
-\end{center}
-
-La Fundación para el Código Abierto Geoespacial, u \alert{OSgeo}, es una
-organización sin ánimo de lucro cuyo objetivo principal es apoyar y promocionar
-el desarrollo abierto y colaborativo de los datos y las tecnologías
-geoespaciales. La fundación proporciona apoyo económico, organizativo y legal a
-la comunidad del código abierto geoespacial. Además es una entidad legal
-independiente a la que los miembros de la comunidad pueden aportar código
-fuente, donativos y otros recursos, seguros de saber que sus contribuciones
-permanecerán siempre para el beneficio común. OSGeo sirve además como una
-organización de apoyo a la comunidad del código abierto geoespacial,
-proporcionando un foro e infraestructura compartido para mejorar la colaboración
-horizontal entre proyectos.
-
-\begin{center}
-\color{VerdeOscuro2!50!black}\Large Contacto y enlaces de interés
-\end{center}
-\begin{center}
-\begin{minipage}{0.2\textwidth}
- \large
-    \begin{mdframed}[style=CajaContactos, frametitle={\Large\color{green!10!white} Twitter}]
-      \web{@osgeo}
-    \end{mdframed}
-\end{minipage}
-%
-\begin{minipage}{0.65\textwidth}
-  \large
-    \begin{mdframed}[style=CajaContactos, frametitle={\Large\color{green!10!white} Lista de correo}]
-      \web{http://lists.osgeo.org/mailman/listinfo/spanish}
-    \end{mdframed}
-\end{minipage}
-%\end{center}
-%\begin{minipage}{0.2\textwidth}
-%  \begin{center} \large
-%    \begin{mdframed}[style=CajaContactos, frametitle={\Large\color{green!10!white} IRC}]
-%      \web{\#osgeo-es}
-%    \end{mdframed}
-%  \end{center}
-%\end{minipage}
-%%
-%\begin{center} 
-\begin{minipage}{0.90\textwidth}
-  \large
-    \begin{mdframed}[style=CajaContactos, frametitle={\Large\color{green!10!white} Wiki}]
-      \web{http://wiki.osgeo.org/wiki/Capítulo\_Local\_de\_la\_comunidad\_hispanohablante}
-    \end{mdframed}
-\end{minipage}
-\end{center}
-
-\begin{center}
-\color{VerdeOscuro2!50!black}\Large Reuniones iniciativas locales
-\end{center}
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=0.65\textwidth]{img/Geoinquietos-world}
+  \end{center}
+\end{figure}
 
 \alert{Geoinquietos} son encuentros locales informales entre gente que comparte
 inquietudes, intereses, experiencias o cualquier idea en el ámbito de la
 geomática, el software libre y la tecnología geoespacial (todo aquello
-relacionado con el ámbito \alert{GEO} y \alert{SIG}). Son reuniones distendidas que suelen
+relacionado con el ámbito GEO y SIG). Son reuniones distendidas que suelen
 constar de una o varias pequeñas presentaciones o talleres sobre un tema
-relacionado con la tecnología y la información geográfica. Los Geoinquietos se
-han extendido ya por Barcelona, Buenos Aires, Cantabria, Córdoba, Madrid,
-Valencia y la Zona Norte.
+relacionado con la tecnología y la información geográfica. 
+
+Los Geoinquietos se han extendido ya por Barcelona, Cantabria, Córdoba, Madrid,
+Tenerife, Valencia y la zona Norte. También se han creado grupos de geoinquietos
+en Buenos Aires, Roma y las Islas Galápagos.
 
 Los participantes y asistentes toman un papel participativo y activo generando
 un ambiente donde fluyen ideas y experiencias en torno a la tecnología y la
-innovación.  \alert{Cualquier persona está invitada} a asistir a las actividades
+innovación. \alert{Cualquier persona está invitada} a asistir a las actividades
 de Geoinquietos, con el único requisito de querer \alert{compartir}
 conocimientos y \alert{aprender} de los demás.
 
@@ -153,17 +106,58 @@ El Portal Geoinquietos (\alert{\texttt{http://geoinquietos.drupalgardens.com/}})
 centraliza toda la información sobre los diferentes grupos locales. También
 puedes buscar y utilizar el hashtag \alert{\#geoinquietos} en Twitter. 
 
+%\begin{figure}[h]
+%  \begin{center}
+%    \includegraphics[width=0.10\textwidth]{img/logo_geoinquietosmad}
+%  \end{center}
+%\end{figure}
+
+\begin{figure}[h]
+        \centering
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_geoinquiets}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_geoinquietosbas}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_geoinquietoscan}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_geoinquietosmad}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_geoinquietosten}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_geoinquietosval}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.12\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/logo_xeoinquedos}
+        \end{subfigure}%
+\end{figure}
+
 \begin{center}
 \color{VerdeOscuro2!50!black}\huge Geoinquietos Madrid
 \end{center}
 
 \alert{Geoinquietos Madrid} surge como iniciativa para ponernos en contacto en
 la zona de Madrid. Se trata de un evento donde compartir inquietudes, intereses,
-experiencias o cualquier idea, que se relacione con el ámbito geomático.
+experiencias o cualquier idea, que se relacione con el ambito geomático.
 
-\begin{center}
-\color{VerdeOscuro2!50!black}\Large Cómo contactar
-\end{center}
 \begin{center}
 \begin{minipage}{0.3\textwidth}
   \begin{center} \large
@@ -180,9 +174,18 @@ experiencias o cualquier idea, que se relacione con el ámbito geomático.
     \end{mdframed}
   \end{center}
 \end{minipage}
+
+\begin{minipage}{0.9\textwidth}
+\begin{center} \large
+    \begin{mdframed}[style=CajaContactos, frametitle={\Large\color{green!10!white} Wiki}]
+      \web{http://wiki.osgeo.org/wiki/Capítulo\_Local\_de\_la\_comunidad\_hispanohablante}
+    \end{mdframed}
   \end{center}
+\end{minipage}
+\end{center}
 
 \newpage
+
 
 \mdfsetup{frametitlealignment=\center}
 
